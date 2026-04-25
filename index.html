@@ -471,7 +471,14 @@
                 totalGastos,
                 resultado
             };
-
+            enviarAGoogleSheets({
+                fecha: fecha,
+                saldoInicial: saldo,
+                recoleccion: recoleccion,
+                totalGastos: totalGastos,
+                resultado: resultado,
+                     gastos: gastos
+});
             if (indiceEdicion === null) {
                 historial.push(registro);
                 alert("Registro guardado correctamente");
